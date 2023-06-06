@@ -1,0 +1,59 @@
+.nav-bar{
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.nav-bar .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+.nav-bar .logo h1, span{
+    color: var(--primary);
+    margin-right: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.links ul li a{
+    margin-left: 22px;
+    font-weight: 400;
+    transition: .1s;
+    color: var(--dark);
+}
+
+.links ul li a:hover{
+    color: var(--primary);
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.auth-btns a{
+    color: var(--dark);
+    border: 1px solid var(--primary);
+    padding: 3px 16px;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.auth-btns a:hover{
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.auth-btns #signIn{
+    margin-right: 24px;
+}

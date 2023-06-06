@@ -1,0 +1,46 @@
+.mini{
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+}
+
+.search{
+    background-color: var(--light);
+    width: 38%;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    border-radius: 28px;
+    padding: 0 8px;
+}
+
+input{
+    width: 90%;
+    height: 28px;
+    margin-left: 8px;
+    border: none;
+    background-color: var(--light);
+    border-radius: 28px;
+}
+
+input::placeholder{
+    color: var(--primary);
+}
+
+span{
+    color: var(--primary);
+}
+
+.sort{
+    background-color: var(--light);
+    width: 20%;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    border-radius: 28px;
+    padding: 0 8px;
+    justify-content: space-between;
+    color: var(--primary);
+}

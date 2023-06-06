@@ -1,0 +1,20 @@
+.filter h2{
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.filter h4{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+input{
+    float: right;
+    background-color: var(--primary);
+}
+
+.side-fil h4{
+    line-height: 1.6em;
+}

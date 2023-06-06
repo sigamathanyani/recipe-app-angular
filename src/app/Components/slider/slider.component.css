@@ -1,0 +1,19 @@
+.slider{
+    width: 8rem;
+    height: auto;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    margin-right: 10px;
+}
+
+.slider #prv, #nxt{
+    background-color: var(--light);
+    padding: 6px 10px;
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 6px;
+}
