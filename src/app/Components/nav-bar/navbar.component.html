@@ -1,21 +1,23 @@
 <div class="nav-bar">
     <div class="logo">
-        <a href=""><span class="material-symbols-outlined"> restaurant </span></a>
-        <a href=""><h1>Foodie</h1></a>
+        <a routerLink="/"><span class="material-symbols-outlined"> restaurant </span></a>
+        <a routerLink="/"><h1>Foodie</h1></a>
     </div>
 
     <div class="links">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a routerLink="/">Home</a></li>
             <li><a href="">Discover</a></li>
             <li><a href="">Tags</a></li>
         </ul>
     </div>
 
     <div class="auth-btns">
-        <a href="" id="signIn">Sign In</a>
-        <a href="">Log In</a>
+        <a routerLink="/register" id="signIn" *ngIf="!loggedIn">Sign In</a>
+        <a routerLink="/login" *ngIf="!loggedIn">Log In</a>
+        <a routerLink="/login" *ngIf="loggedIn" (click)="LogOut()">Log Out</a>
     </div>
+
 </div>
 
 

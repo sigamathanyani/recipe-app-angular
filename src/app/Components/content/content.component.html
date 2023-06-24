@@ -10,14 +10,10 @@
     <div class="content">
         <app-mini-nav></app-mini-nav>
         <div class="wrapper">
-            <app-food></app-food>          
-            <app-food></app-food>          
-            <app-food></app-food>          
-            <app-food></app-food>          
-            <app-food></app-food>          
-            <app-food></app-food>          
-            <app-food></app-food>        
-            <app-food></app-food>  
+            <div class="items" *ngFor="let rec of foods">
+                <app-food [recipe]="rec"></app-food> 
+            </div>
+            
         </div>
         
         <app-slider></app-slider>

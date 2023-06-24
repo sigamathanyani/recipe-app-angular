@@ -1,0 +1,30 @@
+<div class="cover-form">
+    <div class="form">
+        <div id="heading">
+            <h2>Login</h2>
+        </div>
+        
+        <form #f="ngForm">
+
+            <div class="email">
+                <input ngModel type="email" name="username" placeholder="Enter Email">
+            </div>
+            
+            <div class="password">
+                <input ngModel type="password" name="password" placeholder="Enter Password">
+            </div>
+
+            <div id="btn">
+                <button (click)="formSubmit(f)">Log In</button>
+            </div>
+
+            <div id="log-in">
+                <p>Do not have an account ? <em><a routerLink="/register">Register</a></em></p>
+            </div>  
+
+        </form> 
+        
+
+    </div>
+
+</div>
