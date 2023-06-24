@@ -13,6 +13,11 @@ import { ContentComponent } from './Components/content/content.component';
 import { FoodComponent } from './Components/food/food.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/register/register.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,11 +31,20 @@ import { FooterComponent } from './Components/footer/footer.component';
     ContentComponent,
     FoodComponent,
     SliderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path:'login',component:LoginComponent},
+      {path:'register',component:RegisterComponent},
+      {path:'',component:HomeComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
